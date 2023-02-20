@@ -4,10 +4,14 @@ import { LoginComponent  } from './authenticate/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ApplyLeaveComponent } from './employee/apply-leave/apply-leave.component';
 import { HomeComponent } from './home/home.component';
+import { EmployeeHomeComponent } from './employee/employee-home/employee-home.component';
+import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'employeeHome', component: ApplyLeaveComponent},
+  {path: 'employeeLeave', component: ApplyLeaveComponent},
+  {path: 'employeeHome', component: EmployeeHomeComponent},
+  {path: 'adminHome', component: AdminHomeComponent},
   {path: '', redirectTo: 'login',pathMatch: 'full'}
 
 ];

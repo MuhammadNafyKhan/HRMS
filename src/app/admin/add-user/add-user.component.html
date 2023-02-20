@@ -1,0 +1,68 @@
+<div mat-dialog-content>
+  <p>Email</p>
+  <mat-form-field appearance="fill">
+    <mat-label>example@gmail.com</mat-label>
+    <input matInput [(ngModel)]="data.email">
+  </mat-form-field>
+  <p>Password</p>
+  <mat-form-field appearance="fill">
+    <mat-label>must be atleast 8 chars</mat-label>
+    <input matInput [(ngModel)]="data.password">
+  </mat-form-field>
+
+  <p>firstName</p>
+  <mat-form-field appearance="fill">
+    <mat-label>first name</mat-label>
+    <input matInput [(ngModel)]="data.firstName">
+  </mat-form-field>
+
+  <p>lastName</p>
+  <mat-form-field appearance="fill">
+    <mat-label> last name </mat-label>
+    <input matInput [(ngModel)]="data.lastName">
+  </mat-form-field>
+
+  <p>deptId</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Dept Id</mat-label>
+    <input matInput [(ngModel)]="data.deptId">
+  </mat-form-field>
+
+  <p>cnic</p>
+  <mat-form-field appearance="fill">
+    <mat-label> cnic </mat-label>
+    <input matInput [(ngModel)]="data.cnic">
+  </mat-form-field>
+
+  <p>designationId</p>
+  <mat-form-field appearance="fill">
+    <mat-label>designationId</mat-label>
+    <input matInput [(ngModel)]="data.designationId">
+  </mat-form-field>
+
+  <p>joinningDate</p>
+  <mat-form-field appearance="fill">
+    <mat-label>joinningDate</mat-label>
+    <input matInput [(ngModel)]="data.joinningDate">
+  </mat-form-field>
+
+  <p>contactNumber</p>
+  <mat-form-field appearance="fill">
+    <mat-label>contactNumber</mat-label>
+    <input matInput [(ngModel)]="data.contactNumber">
+  </mat-form-field>
+
+  <p>role</p>
+  <mat-form-field appearance="fill">
+    <mat-label>role</mat-label>
+    <input matInput [(ngModel)]="data.role">
+  </mat-form-field>
+
+
+
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

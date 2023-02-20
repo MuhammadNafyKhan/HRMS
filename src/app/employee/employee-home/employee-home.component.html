@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit() ">
+
+    <body>
+        <h1 style="text-align:center">Employee Home Page </h1>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br> <button style="margin-left: 70px; margin-top: 10px " id="applyLeave" type="submit">apply-Leave</button>
+        <br> <button style="margin-left: 70px; margin-top: 10px " id="viewAttendance" type="button" (click) ="viewAttendanceClicked()">view-Attendance</button>
+        <br> <button style="margin-left: 70px; margin-top: 10px " id="viewProfile" type="button" (click) ="viewProfileClicked()">view-Profile</button>
+        <br> <button style="margin-left: 70px; margin-top: 10px " id="changePassword" type="button" (click) ="changePasswordClicked()">change-Password</button>
+
+    </body>
+</form>

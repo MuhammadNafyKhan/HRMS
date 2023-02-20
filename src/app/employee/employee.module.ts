@@ -4,6 +4,7 @@ import { ViewLeaveComponent } from './view-leave/view-leave.component';
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AttendanceComponent } from './attendance/attendance.component';
+import { EmployeeHomeComponent } from './employee-home/employee-home.component';
 
 
 
@@ -12,7 +13,8 @@ import { AttendanceComponent } from './attendance/attendance.component';
     ViewLeaveComponent,
     ApplyLeaveComponent,
     ProfileComponent,
-    AttendanceComponent
+    AttendanceComponent,
+    EmployeeHomeComponent
   ],
   imports: [
     CommonModule

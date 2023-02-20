@@ -1,5 +1,3 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Login Page </title>
@@ -50,7 +48,7 @@
 
     <body>
         <h1 style="text-align:center">Student Login Form </h1>
-        <form>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="container">
                 <label for="email">Email</label>
                 <input type="text" id="email" placeholder="Enter Email" name="email" formControlName="email" required>
@@ -59,8 +57,8 @@
                     required>
 
             </div>
+            <button type="submit">login</button>
         </form>
-    </body>
-    <button type="submit">login</button>
 
-</form>
+    </body>
+
